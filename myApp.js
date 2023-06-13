@@ -13,7 +13,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use("/public", express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 // app.use(function middleware(req, res, next) {
 //   var string = req.method + " " + req.path + " - " + req.ip;
@@ -22,7 +22,7 @@ app.use("/public", express.static(__dirname + "/public"));
 // });
 
 app.get("/", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "/views/index.html"));
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 app.get("/json", (req, res, next) => {
