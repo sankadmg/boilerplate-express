@@ -10,7 +10,7 @@
     "mongoose": "^7.2.4"
   },
   "resolutions": {
-    "mongoose": "^14.20.1"
+    "mongoose": "14.20.1"
   },
   "main": "server.js",
   "scripts": {
