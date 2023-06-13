@@ -9,6 +9,9 @@
     "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
     "mongoose": "^7.2.4"
   },
+  "resolutions": {
+    "mongoose": "^14.20.1"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
